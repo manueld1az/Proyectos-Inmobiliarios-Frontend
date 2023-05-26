@@ -1,0 +1,11 @@
+.card{
+  margin: 1vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.full-width {
+  width: 100%;
+  margin: 1rem 0;
+}

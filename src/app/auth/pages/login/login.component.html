@@ -1,0 +1,30 @@
+<mat-card class="card">
+
+  <mat-card-header class="full-width">
+    <mat-card-title>Ingresa</mat-card-title>
+    <mat-card-subtitle>Ingresa para encontrar todos los proyectos disponibles</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <form (submit)="ingresar()">
+      <!-- Correo Electrónico -->
+      <mat-form-field class="full-width">
+        <mat-label>Correo Electrónico</mat-label>
+        <input type="email" [(ngModel)]="usuario.correo" name="correo" matInput placeholder="Ej. ejemplo@ejemplo.com"
+          required>
+      </mat-form-field>
+
+      <!-- Mostrar una alerta de Contraseña erronea y poner el nombre de usuario en el centro del nav -->
+      <!-- Contraseña -->
+      <mat-form-field class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" [(ngModel)]="usuario.clave" name="clave" matInput required>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" class="full-width" color="primary">Ingresar</button>
+    </form>
+
+  </mat-card-content>
+
+</mat-card>

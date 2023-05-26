@@ -1,0 +1,71 @@
+<!-- si no esta registrado debe mostrarse la siguiente alerta -->
+<article *ngIf="usuarioRegistrado; else noRegistrado">
+  <ng-container *ngTemplateOutlet="registrado; context: comprobacion"></ng-container>
+</article>
+
+<ng-template #registrado let-mensaje="mensaje">
+  
+  <mat-card class="card">
+    
+    <mat-card-header class="full-width">
+      <mat-card-title>{{mensaje}}</mat-card-title>
+      <mat-card-subtitle>Ya puede encontrar todos los proyectos disponibles en la sección de Compra y Venta</mat-card-subtitle>
+    </mat-card-header>
+    
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+  
+</ng-template>
+
+<ng-template #noRegistrado>
+  <ng-container *ngTemplateOutlet="alertaRegistro; context: comprobacion"></ng-container>
+</ng-template>
+
+<ng-template #alertaRegistro let-mensaje="mensaje">
+
+  <mat-card class="card">
+
+    <mat-card-header class="full-width">
+      <mat-card-title>{{mensaje}}</mat-card-title>
+      <mat-card-subtitle>Debe iniciar sesión para encontrar todos los proyectos disponibles</mat-card-subtitle>
+    </mat-card-header>
+    
+    <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+  </mat-card>
+
+</ng-template>
+
+<mat-card class="card">
+  
+  <mat-card-header class="full-width">
+    <mat-card-title>Registrate</mat-card-title>
+    <mat-card-subtitle>Registrate para ver todos los proyectos disponibles</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <form (submit)="registrar()">
+      <!-- Correo Electrónico -->
+      <mat-form-field class="full-width">
+        <mat-label>Correo Electrónico</mat-label>
+        <input type="email" [(ngModel)]="usuario.correo" name="correo" matInput
+          placeholder="Ej. ejemplo@ejemplo.com" required>
+      </mat-form-field>
+
+      <!-- Contraseña -->
+      <mat-form-field class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" [(ngModel)]="usuario.clave" name="clave" matInput required>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" class="full-width" color="primary">Registrarse</button>
+    </form>
+
+  </mat-card-content>
+</mat-card>
