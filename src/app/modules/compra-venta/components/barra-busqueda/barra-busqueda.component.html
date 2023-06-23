@@ -1,5 +1,5 @@
-<form class="contenedorInput">
-  <mat-form-field>
+<form>
+  <mat-form-field class="contenedorInput">
     <input matInput type="text" aria-label="Input para buscar lugares" placeholder="Buscar un lugar"
       [formControl]="buscarLugarControl" [matAutocomplete]="auto" (focus)="obtenerOpciones()">
     <button type="button" matSuffix mat-icon-button aria-label="Clear" (click)="this.buscarLugarControl.setValue('');"
