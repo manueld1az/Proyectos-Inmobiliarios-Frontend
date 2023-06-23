@@ -8,12 +8,12 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () =>
-      import('./auth/auth.module').then((module) => module.AuthModule),
+      import('./modules/auth/auth.module').then((module) => module.AuthModule),
   },
   {
     path: 'compra-venta',
     loadChildren: () =>
-      import('./compra-venta/compra-venta.module').then(
+      import('./modules/compra-venta/compra-venta.module').then(
         (module) => module.CompraVentaModule
       ),
     canActivate: [AuthGuard],

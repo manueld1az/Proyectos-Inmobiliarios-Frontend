@@ -1,0 +1,12 @@
+<app-loading *ngIf="!coordenadasUsuario; else coordenadasObtenindas"></app-loading>
+
+<ng-template #coordenadasObtenindas>
+  <section id="contenedorMainProyectos">
+    <app-map></app-map>
+    <article id="contenedorBarraBusqueda">
+      <app-barra-busqueda id="barraBusqueda"></app-barra-busqueda>
+    </article>
+    <app-boton-reubicar id="botonReubicar" class="botonMapa"></app-boton-reubicar>
+    <app-boton-crear-marcador id="botonCrearMarcador" class="botonMapa"></app-boton-crear-marcador>
+  </section>
+</ng-template>

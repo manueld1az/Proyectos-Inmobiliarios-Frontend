@@ -1,0 +1,23 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8" id="TablaEstadisticas">
+
+  <!-- mes columna -->
+  <ng-container matColumnDef="mes">
+    <th mat-header-cell *matHeaderCellDef> MES </th>
+    <td mat-cell *matCellDef="let element"> {{element.mes}} </td>
+  </ng-container>
+
+  <!-- cantidadInmuebles columna -->
+  <ng-container matColumnDef="cantidadInmuebles">
+    <th mat-header-cell *matHeaderCellDef> CANTIDAD DE INMUEBLES </th>
+    <td mat-cell *matCellDef="let element"> {{element.cantidadInmuebles}} </td>
+  </ng-container>
+
+  <!-- totalVentas columna -->
+  <ng-container matColumnDef="totalVentas">
+    <th mat-header-cell *matHeaderCellDef> TOTAL DE VENTAS </th>
+    <td mat-cell *matCellDef="let element"> {{element.totalVentas | currency:'USD':'symbol':'1.2-2'}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnastabla"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnastabla;"></tr>
+</table>

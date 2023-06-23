@@ -1,0 +1,28 @@
+<form [formGroup]="formularioLugarMarcado">
+  <h1 mat-dialog-title>Crear nuevo marcador</h1>
+  <div mat-dialog-content class="contenidoDialogo">
+    <mat-form-field>
+      <mat-label>Nombre del lugar</mat-label>
+      <input matInput type="text" formControlName="nombre" cdkFocusInitial>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Latitud</mat-label>
+      <input matInput type="number" formControlName="latitud">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Longitud</mat-label>
+      <input matInput type="number" formControlName="longitud">
+    </mat-form-field>
+  </div>
+  <div mat-dialog-actions class="accionesDialogo">
+    <button type="button" mat-raised-button color="basic" aria-label="Botón para cancelar la creación del nuevo marcador"
+      (click)="this.formularioDialogo.close();">
+      Cancelar
+    </button>
+
+    <button type="submit" mat-raised-button color="primary" aria-label="Botón para guardar el nuevo marcador"
+      [disabled]="this.formularioLugarMarcado.invalid" [mat-dialog-close]="formularioLugarMarcado.value">
+      Guardar
+    </button>
+  </div>
+</form>

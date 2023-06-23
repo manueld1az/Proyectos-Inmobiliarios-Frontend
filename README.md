@@ -1,27 +1,62 @@
-# FrontEnd
+# Proyectos Inmobiliarios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Este proyecto representa una Sitio Web de una inmobiliaria a continuación, se describen las diferentes tecnologías utilizadas y funcionalidades desarrolladas.
 
-## Development server
+## Funcionalidades Desarrolladas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### __Barra de navegación__
 
-## Code scaffolding
+Desde este componente global del sitio web se puede acceder al modulo de Auth o de Authentication en Español y se compone de los siguientes elementos:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- __Titulo__, que también funciona como enlace al home del sitio web.
+- __botones__ para:
+  - __registrar__ un nuevo usuario.
+  - __iniciar sesión__ de un usuario.
+  - __cerrar la sesión__ iniciada.
 
-## Build
+### __Home del Sitio Web__
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Aquí se muestra el modulo de Compra Venta __solo si el usuario a iniciado sesión.__
 
-## Running unit tests
+#### __Sección de Compra__
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+La sección de compra presenta el submódulo "Proyectos", el cual incluye un mapa geográfico ubicado en las coordenadas aproximadas que se encuentre el usuario.
 
-## Running end-to-end tests
+Los usuarios en este mapa pueden:
+- __revisar__ su geolocalización aproximada.
+- __crear__ nuevos marcadores.
+- __moverse__ por todo el mapa, acercarce o alejarlo para ver mas o menos detalles en un mapa real.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### __Sección de Ventas__
 
-## Further help
+La sección de ventas presenta el submódulo "Estadísticas", donde se muestra una tabla con el total de ventas por mes de los últimos 4 meses.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Tecnologías Utilizadas
+
+El proyecto cumple con los siguientes requisitos y utiliza las siguientes tecnologías:
+
+- __Frontend:__ Uso del Framework __Angular__ para el desarrollo de las interfaces de usuario.
+- __Estilos:__ Uso del Framework __Angular Material UI__ para el desarrollo de las vistas y estilos.
+- __Backend:__ Desarrollado utilizando el Framework __Express__ de Node.js.
+- __Autenticación:__ Implementación de login utilizando __Json web token (JWT).__
+- __Lazy Loading:__ Implementación de carga diferida (lazy loading) para mejorar la __eficiencia de la aplicación.__
+- __Variables de Entorno:__ Se han configurado variables de entorno para el __entorno de desarrollo.__
+- __Base de Datos:__ __No se requiere__ implementar una base de datos en este proyecto aún.
+
+## Cómo Ejecutar el Proyecto
+
+Para ejecutar el proyecto, siga los siguientes pasos:
+
+1. Clonar este repositorio.
+2. Instalar las dependencias utilizando el comando `npm install`.
+3. Ejecutar el servidor de desarrollo utilizando el comando `npm start`.
+4. Abrir el navegador web y acceder a la URL proporcionada por el servidor de desarrollo.
+
+## Contacto
+
+Para obtener más información o cualquier consulta adicional, por favor contactar a:
+- Whatsapp: 3160461056
+- Email: diazmanuelj13@gmail.com
+- Linkedin: http://www.linkedin.com/in/manueld1az
+
+¡Gracias por considerar mi aplicación!

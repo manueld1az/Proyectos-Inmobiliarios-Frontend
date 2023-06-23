@@ -1,26 +1,4 @@
-<mat-toolbar class="nav">
-
-  <article class="nav-item">
-    <a class="nav-button" mat-icon-button aria-label="Botón para regresar al home" routerLink="/compra-venta/home">
-      <mat-icon>home</mat-icon>
-    </a>
-    <a class="nav-button" color="basic" aria-label="Botón para regresar al home" routerLink="/compra-venta/home">
-      <span>Proyectos inmobiliarios</span>
-    </a>
-  </article>
-
-  <article class="nav-item">
-    <!-- Enlace con parámetro -->
-    <!-- <a [routerLink]="['/ruta', parámetro]">Enlace con parámetro</a> -->
-    <button class="nav-button" mat-raised-button color="basic" aria-label="Botón para ingresar"
-      routerLink="/auth/login">Ingresar
-    </button>
-    <button class="nav-button" mat-raised-button color="primary" aria-label="Botón para registrarse"
-      routerLink="/auth/registro">Registrarse
-    </button>
-  </article>
-
-</mat-toolbar>
+<app-nav></app-nav>
 
 <main>
   <router-outlet></router-outlet>

@@ -1,0 +1,39 @@
+#contenedorMainProyectos {
+  position: relative;
+}
+
+#contenedorBarraBusqueda{
+  width: 100%;
+  position: absolute;
+  top: 1vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#barraBusqueda {
+  z-index: 1000;
+  min-width: 33%;
+  background-color: white;
+  padding: 1vh;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botonMapa {
+  z-index: 1000;
+  padding: 1vh;
+}
+
+#botonCrearMarcador {
+  position: absolute;
+  bottom: 2vh;
+  right: 1vh;
+}
+
+#botonReubicar {
+  position: absolute;
+  bottom: 1vh;
+  left: 1vh;
+}

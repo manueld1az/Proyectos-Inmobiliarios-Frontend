@@ -1,0 +1,25 @@
+<mat-toolbar class="nav">
+  <article class="nav-item">
+    <a class="nav-button" aria-label="Botón para regresar al home" routerLink="/compra-venta/home">
+      Proyectos inmobiliarios
+    </a>
+  </article>
+
+  <article class="nav-item">
+    <ng-container *ngIf="!sesionIniciada; else botonCerrarSesion">
+      <button class="nav-button" mat-raised-button color="basic" aria-label="Botón para ingresar"
+        routerLink="/auth/login">Ingresar
+      </button>
+      <button class="nav-button" mat-raised-button color="primary" aria-label="Botón para registrarse"
+        routerLink="/auth/registro">Registrarse
+      </button>
+    </ng-container>
+
+    <ng-template #botonCerrarSesion>
+      <button class="nav-button" mat-raised-button color="basic" aria-label="Botón para cerrar sesión"
+        (click)="cerrarSesion()">Cerrar Sesión
+      </button>
+    </ng-template>
+
+  </article>
+</mat-toolbar>

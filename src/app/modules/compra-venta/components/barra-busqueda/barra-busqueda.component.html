@@ -1,0 +1,15 @@
+<form class="contenedorInput">
+  <mat-form-field>
+    <input matInput type="text" aria-label="Input para buscar lugares" placeholder="Buscar un lugar"
+      [formControl]="buscarLugarControl" [matAutocomplete]="auto" (focus)="obtenerOpciones()">
+    <button type="button" matSuffix mat-icon-button aria-label="Clear" (click)="this.buscarLugarControl.setValue('');"
+      [disabled]="this.buscarLugarControl.value === ''">
+      <mat-icon *ngIf="this.buscarLugarControl.value != ''">close</mat-icon>
+    </button>
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let option of nombresFiltrados | async" [value]="option" (click)="volar(option)">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

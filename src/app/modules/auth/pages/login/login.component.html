@@ -1,0 +1,30 @@
+<mat-card class="card">
+
+  <mat-card-header class="full-width">
+    <mat-card-title>Ingresa</mat-card-title>
+    <mat-card-subtitle>Ingresa para encontrar todos los proyectos disponibles</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+
+    <form (submit)="ingresar()">
+      <!-- Correo Electrónico -->
+      <mat-form-field class="full-width">
+        <mat-label>Correo Electrónico</mat-label>
+        <input type="email" [(ngModel)]="usuario.correo" name="correo" matInput placeholder="ejemplo@ejemplo.com"
+          required autofocus>
+      </mat-form-field>
+
+      <!-- Contraseña -->
+      <mat-form-field class="full-width">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" [(ngModel)]="usuario.clave" name="clave" matInput required>
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" class="full-width" color="primary"
+      [disabled]="this.usuario.correo == ''">Ingresar</button>
+    </form>
+
+  </mat-card-content>
+
+</mat-card>
