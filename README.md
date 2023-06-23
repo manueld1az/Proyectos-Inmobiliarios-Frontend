@@ -6,6 +6,9 @@ Este proyecto representa una Sitio Web de una inmobiliaria a continuación, se d
 
 ### __Barra de navegación__
 
+<!-- Screenshoot -->
+<img align="center" src="https://github.com/manueld1az/Proyectos-Inmobiliarios-Frontend/blob/main/Images/1_Registro%20Usuario_2023-06-23-140742_1366x768.png"/>
+
 Desde este componente global del sitio web se puede acceder al modulo de Auth o de Authentication en Español y se compone de los siguientes elementos:
 
 - __Titulo__, que también funciona como enlace al home del sitio web.
@@ -16,9 +19,15 @@ Desde este componente global del sitio web se puede acceder al modulo de Auth o 
 
 ### __Home del Sitio Web__
 
+<!-- Screenshoot -->
+<img align="center" src="https://github.com/manueld1az/Proyectos-Inmobiliarios-Frontend/blob/main/Images/3_privada%20Home%20del%20modulo%20Compra%20y%20Venta_2023-06-23-140742_1366x768.png"/>
+
 Aquí se muestra el modulo de Compra Venta __solo si el usuario a iniciado sesión__ y desde aqui se puede acceder a las siguientes secciones:
 
 #### __Sección de Compra__
+
+<!-- Screenshoot -->
+<img align="center" src="https://github.com/manueld1az/Proyectos-Inmobiliarios-Frontend/blob/main/Images/5_privada%20Mapa%20dentro%20del%20componente%20Proyectos_2023-06-23-140742_1366x768.png"/>
 
 La sección de compra presenta el submódulo "Proyectos", el cual incluye un mapa geográfico ubicado en las coordenadas aproximadas que se encuentre el usuario.
 
@@ -28,6 +37,9 @@ Los usuarios en este mapa pueden:
 - __moverse__ por todo el mapa, acercarce o alejarlo para ver mas o menos detalles en un mapa real.
 
 #### __Sección de Ventas__
+
+<!-- Screenshoot -->
+<img align="center" src="https://github.com/manueld1az/Proyectos-Inmobiliarios-Frontend/blob/main/Images/6_privada%20Estadisticas%20dentro%20del%20componente%20Venta_2023-06-23-140742_1366x768.png"/>
 
 La sección de ventas presenta el submódulo "Estadísticas", donde se muestra una tabla con el total de ventas por mes de los últimos 4 meses.
 
