@@ -1,4 +1,4 @@
-# Proyectos Inmobiliarios
+# Proyectos Inmobiliarios Frontend
 
 Este proyecto representa una Sitio Web de una inmobiliaria a continuación, se describen las diferentes tecnologías utilizadas y funcionalidades desarrolladas.
 
@@ -10,13 +10,13 @@ Desde este componente global del sitio web se puede acceder al modulo de Auth o 
 
 - __Titulo__, que también funciona como enlace al home del sitio web.
 - __botones__ para:
-  - __registrar__ un nuevo usuario.
-  - __iniciar sesión__ de un usuario.
-  - __cerrar la sesión__ iniciada.
+- __registrar__ un nuevo usuario.
+- __iniciar sesión__ de un usuario.
+- __cerrar la sesión__ iniciada.
 
 ### __Home del Sitio Web__
 
-Aquí se muestra el modulo de Compra Venta __solo si el usuario a iniciado sesión.__
+Aquí se muestra el modulo de Compra Venta __solo si el usuario a iniciado sesión__ y desde aqui se puede acceder a las siguientes secciones:
 
 #### __Sección de Compra__
 
@@ -27,7 +27,7 @@ Los usuarios en este mapa pueden:
 - __crear__ nuevos marcadores.
 - __moverse__ por todo el mapa, acercarce o alejarlo para ver mas o menos detalles en un mapa real.
 
-### __Sección de Ventas__
+#### __Sección de Ventas__
 
 La sección de ventas presenta el submódulo "Estadísticas", donde se muestra una tabla con el total de ventas por mes de los últimos 4 meses.
 
@@ -37,7 +37,6 @@ El proyecto cumple con los siguientes requisitos y utiliza las siguientes tecnol
 
 - __Frontend:__ Uso del Framework __Angular__ para el desarrollo de las interfaces de usuario.
 - __Estilos:__ Uso del Framework __Angular Material UI__ para el desarrollo de las vistas y estilos.
-- __Backend:__ Desarrollado utilizando el Framework __Express__ de Node.js.
 - __Autenticación:__ Implementación de login utilizando __Json web token (JWT).__
 - __Lazy Loading:__ Implementación de carga diferida (lazy loading) para mejorar la __eficiencia de la aplicación.__
 - __Variables de Entorno:__ Se han configurado variables de entorno para el __entorno de desarrollo.__
@@ -48,15 +47,19 @@ El proyecto cumple con los siguientes requisitos y utiliza las siguientes tecnol
 Para ejecutar el proyecto, siga los siguientes pasos:
 
 1. Clonar este repositorio.
-2. Instalar las dependencias utilizando el comando `npm install`.
-3. Ejecutar el servidor de desarrollo utilizando el comando `npm start`.
-4. Abrir el navegador web y acceder a la URL proporcionada por el servidor de desarrollo.
+2. Ejecute el siguiente comando: `npm install`.
+3. Ejecute el siguiente comando: `npm install -g @angular/cli`.
+4. Ejecute el siguiente comando: `ng serve`.
+5. Abrir el navegador web y acceder a la URL proporcionada por el servidor de desarrollo, por default con Angular es `http://localhost:4200/`
 
 ## Contacto
 
 Para obtener más información o cualquier consulta adicional, por favor contactar a:
 - Whatsapp: 3160461056
 - Email: diazmanuelj13@gmail.com
-- Linkedin: http://www.linkedin.com/in/manueld1az
+- Manuel Diaz : <br> [![Linkedin: manueld1az](https://img.shields.io/badge/-manueld1az-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/manueld1az-p-singh/)](https://www.linkedin.com/in/manueld1az)
+[![Discord: manueld1az](https://img.shields.io/badge/-manueld1az-purple?style=flat&logo=Discord&logoColor=white&link=https://www.discord.com/in/manueld1az-p-singh/)](https://discord.gg/zPw5BUwYKz)
+[![GitHub: manueld1az](https://img.shields.io/badge/-manueld1az-gray?style=flat&logo=GitHub&logoColor=white&link=https://www.github.com/manueld1az-p-singh/)](https://github.com/manueld1az)
 
-¡Gracias por considerar mi aplicación!
+
+¡Gracias por considerar este proyecto!
