@@ -2,6 +2,27 @@
 
 Este proyecto representa una Sitio Web de una inmobiliaria a continuación, se describen las diferentes tecnologías utilizadas y funcionalidades desarrolladas.
 
+## Tecnologías Utilizadas
+
+El proyecto cumple con los siguientes requisitos y utiliza las siguientes tecnologías:
+
+- __Frontend:__ Uso del Framework __Angular__ para el desarrollo de las interfaces de usuario.
+- __Estilos:__ Uso del Framework __Angular Material UI__ para el desarrollo de las vistas y estilos.
+- __Autenticación:__ Implementación de login utilizando __Json web token (JWT).__
+- __Lazy Loading:__ Implementación de carga diferida (lazy loading) para mejorar la __eficiencia de la aplicación.__
+- __Variables de Entorno:__ Se han configurado variables de entorno para el __entorno de desarrollo.__
+- __Base de Datos:__ __No se requiere__ implementar una base de datos en este proyecto aún.
+
+## Cómo Ejecutar el Proyecto
+
+Para ejecutar el proyecto debe tener instalado `node` y `npm`.
+
+1. Clonar este repositorio.
+2. Ejecute el siguiente comando: `npm install`.
+3. Ejecute el siguiente comando: `npm install -g @angular/cli`.
+4. Ejecute el siguiente comando: `ng serve`.
+5. Abrir el navegador web y acceder a la URL proporcionada por el servidor de desarrollo, por default con Angular es `http://localhost:4200/`
+
 ## Funcionalidades Desarrolladas
 
 ### __Barra de navegación__
@@ -43,30 +64,9 @@ Los usuarios en este mapa pueden:
 
 La sección de ventas presenta el submódulo "Estadísticas", donde se muestra una tabla con el total de ventas por mes de los últimos 4 meses.
 
-## Tecnologías Utilizadas
-
-El proyecto cumple con los siguientes requisitos y utiliza las siguientes tecnologías:
-
-- __Frontend:__ Uso del Framework __Angular__ para el desarrollo de las interfaces de usuario.
-- __Estilos:__ Uso del Framework __Angular Material UI__ para el desarrollo de las vistas y estilos.
-- __Autenticación:__ Implementación de login utilizando __Json web token (JWT).__
-- __Lazy Loading:__ Implementación de carga diferida (lazy loading) para mejorar la __eficiencia de la aplicación.__
-- __Variables de Entorno:__ Se han configurado variables de entorno para el __entorno de desarrollo.__
-- __Base de Datos:__ __No se requiere__ implementar una base de datos en este proyecto aún.
-
-## Cómo Ejecutar el Proyecto
-
-Para ejecutar el proyecto, siga los siguientes pasos:
-
-1. Clonar este repositorio.
-2. Ejecute el siguiente comando: `npm install`.
-3. Ejecute el siguiente comando: `npm install -g @angular/cli`.
-4. Ejecute el siguiente comando: `ng serve`.
-5. Abrir el navegador web y acceder a la URL proporcionada por el servidor de desarrollo, por default con Angular es `http://localhost:4200/`
-
 ## Contacto
 
-Para obtener más información o cualquier consulta adicional, por favor contactar a:
+Para obtener más información o cualquier consulta adicional, contactar a:
 - Whatsapp: 3160461056
 - Email: diazmanuelj13@gmail.com
 - Manuel Diaz : <br> [![Linkedin: manueld1az](https://img.shields.io/badge/-manueld1az-blue?style=flat&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/manueld1az-p-singh/)](https://www.linkedin.com/in/manueld1az)
